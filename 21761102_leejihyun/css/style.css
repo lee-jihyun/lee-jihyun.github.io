@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+
+
+
+/* RESET CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family:inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html,body {
+	position: relative;
+    height:100%;
+	width:100%;
+	/* background:#fffcec; */
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	text-decoration:none;
+}
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Nanum Gothic',sans-serif;
+}
+
+/* MAIN SECTION */
+
+main{
+	position: absolute;
+	width:100%;
+	height: 100%;
+	overflow:hidden;
+	top:0;
+	left:0;
+}
+
+/* MAIN */
+
+.main{
+	position: relative;
+	width:100%;
+	height: 100%;
+	text-align:center;
+	z-index: 1;
+	transition:0.5s;
+}
+.main.hidden{
+	transform:scale(0.6,0.6);
+	opacity:0;
+}
+
+.main .main-title{
+	position: absolute;
+	top:50%;
+	transform:translateY(-50%);
+	width:100%;
+	height:auto;
+	text-shadow:0 15px 30px rgba(156, 151, 151, 0.2);
+}
+.main h2{
+	color:#fff;
+	font-size:1.8rem;
+	margin-bottom:40px;
+	font-family: 'Fredoka One', cursive;
+	/* font-family: 'Fredoka One', cursive; */
+	/* font-family: 'Abril Fatface', cursive;*/
+} 
+
+.main h1{
+	color:#f5d626;
+	font-size:7.2rem;
+	line-height:1.2;
+	font-family: 'Archivo Black', sans-serif;
+	/* font-family: 'Fredoka One', cursive; */
+	margin:50px 0;
+
+}
+@keyframes blink-caret { 50% { border-color: transparent; } }
+
+.main h1 span { 
+	border-right: 2px solid white;
+	-moz-animation: blink-caret .5s step-end infinite alternate;
+	-webkit-animation: blink-caret .5s step-end infinite alternate;
+	animation: blink-caret .5s step-end infinite alternate;
+}
+
+.main p{
+	color:#999;
+	font-size:1.6rem;
+	line-height:1.4;
+	margin-bottom:50px;
+}
+
+.main a.resume{
+	color:#999;
+	font-size:1.6rem;
+	padding:10px 20px;
+	border:1px solid #999;
+	margin-top:50px;
+	transition:0.2s;
+}
+
+
+.main a.resume:hover{
+	color:#e94225;
+	border:1px solid #e94225;
+}
+
+/* @media screen{
+	html{
+		font-size:10px;
+	}
+}
+@media (max-width:1400px){
+	html{
+		font-size:10px;
+	}
+	.header,.footer{
+		display:none;
+	}
+	main{
+		overflow-y:scroll;
+	}
+	
+}
+@media (max-width:1024px){
+	html{
+		font-size:10px;
+	}
+}
+
+@media (max-width:786px){
+	html{
+		font-size:10px;
+	}
+	.main h1{
+		font-size:6rem;
+		line-height:1.2;
+	}
+	.main .bar{
+		width:20%;
+		left: 40%;
+	}
+} */
+
+
